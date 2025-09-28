@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Street Gate</title>
+  <meta name="description" content="Street Gate app privacy policy: offline, no internet access, no data collection. Available in English, Russian, and Turkish.">
+  <style>
+    :root{
+      --fg:#0b1220; --muted:#6b7280; --bg:#ffffff; --accent:#0ea5e9;
+      --card:#f8fafc; --border:#e5e7eb;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Noto Sans',Arial,'Apple Color Emoji','Segoe UI Emoji';
+      line-height:1.6}
+    .container{max-width:920px;margin:40px auto;padding:0 20px}
+    header{margin-bottom:20px}
+    h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 8px 0}
+    h2{font-size:1.25rem;margin-top:28px;border-top:1px solid var(--border);padding-top:18px}
+    p,li{font-size:1rem}
+    .meta{color:var(--muted)}
+    .langbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px 0}
+    .langbar button{border:1px solid var(--border);background:var(--card);padding:8px 12px;border-radius:999px;cursor:pointer}
+    .langbar button[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px rgba(14,165,233,.15)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    nav.local{margin:8px 0 16px 0} nav.local a{margin-right:12px;font-size:.95rem}
+    footer{margin:40px 0;color:var(--muted);font-size:.95rem}
+    .notice{font-size:.95rem;color:var(--muted)}
+    [data-lang]{display:none}
+    [data-lang].active{display:block}
+    @media (prefers-color-scheme: dark){
+      :root{--fg:#e5e7eb;--muted:#9ca3af;--bg:#0b1220;--card:#0f172a;--border:#1f2937;--accent:#38bdf8}
+    }
+    @media print{
+      .langbar{display:none}
+      .container{max-width:none;margin:0;padding:0}
+      nav.local{display:none}
+    }
+      .langbar button{ color:#ff0000 !important; }
+    .langbar button[aria-pressed="true"]{ color:#ff0000 !important; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy · Политика конфиденциальности · Gizlilik Politikası</h1>
+      <p class="notice">This single page contains three full versions: English (EN), Russian (RU), and Turkish (TR). Use the buttons below to switch the language.</p>
+      <div class="langbar" role="tablist" aria-label="Language selector">
+        <button id="btn-en" role="tab" aria-controls="lang-en" aria-selected="true" aria-pressed="true">English (EN)</button>
+        <button id="btn-ru" role="tab" aria-controls="lang-ru" aria-selected="false" aria-pressed="false">Русский (RU)</button>
+        <button id="btn-tr" role="tab" aria-controls="lang-tr" aria-selected="false" aria-pressed="false">Türkçe (TR)</button>
+      </div>
+    </header>
+
+    <!-- ENGLISH -->
+    <section id="lang-en" data-lang="en" class="active" lang="en">
+      <header>
+        <h1>Privacy Policy</h1>
+        <p class="meta"><strong>App:</strong> Street Gate<br>
+        <strong>Developer:</strong> Иванов Владислав Игоревич<br>
+        <strong>Contact e-mail:</strong> <a href="mailto:strikevld@mail.ru">strikevld@mail.ru</a><br>
+        <strong>Effective date:</strong> 28 September 2025</p>
+      </header>
+
+      <nav class="local" aria-label="Contents">
+        <a href="#en-general">General</a>
+        <a href="#en-data">Data Collection &amp; Use</a>
+        <a href="#en-permissions">Device Permissions</a>
+        <a href="#en-storage">Storage &amp; Security</a>
+        <a href="#en-children">Children</a>
+        <a href="#en-changes">Changes</a>
+        <a href="#en-contacts">Contacts</a>
+      </nav>
+
+      <section id="en-general">
+        <h2>1. General</h2>
+        <p>The “Street Gate” app works entirely offline, has <strong>no Internet access</strong>, and <strong>does not collect, store, or share</strong> any personal data.</p>
+        <p>The app is designed to work with an <strong>ESP32‑based controller</strong>. A link to the controller’s firmware sketch is provided directly inside the app. If you follow that link, it will be opened by your device’s web browser; we do not control or collect anything on that website.</p>
+        <p>The app interface is available in <strong>English</strong>, <strong>Russian</strong>, and <strong>Turkish</strong>.</p>
+      </section>
+
+      <section id="en-data">
+        <h2>2. Data Collection &amp; Use</h2>
+        <ul>
+          <li>We <strong>do not collect</strong> any personal data (such as names, emails, phone numbers, or identifiers).</li>
+          <li>We <strong>do not use</strong> analytics, tracking, advertising IDs, cookies, or third‑party crash reporting.</li>
+          <li>We <strong>do not share</strong> any data with third parties and perform no profiling or targeted advertising.</li>
+        </ul>
+      </section>
+
+      <section id="en-permissions">
+        <h2>3. Device Permissions</h2>
+        <p>The app requests only the permissions necessary for its offline functionality:</p>
+        <ul>
+          <li><strong>Bluetooth / Nearby devices</strong> (Android 12+): to connect to nearby devices (the ESP32 controller).</li>
+          <li><strong>Location</strong> (on some Android versions): may be required by the system for Bluetooth device discovery. The app <strong>does not collect, store, or transmit</strong> your location data.</li>
+        </ul>
+        <p>All permissions are used <strong>locally</strong>, and any data produced during operation <strong>never leaves your device</strong>.</p>
+      </section>
+
+      <section id="en-storage">
+        <h2>4. Storage &amp; Security</h2>
+        <p>We operate no servers and perform no remote storage. Any app settings (if present) are stored locally on your device and are removed when you uninstall the app.</p>
+      </section>
+
+      <section id="en-children">
+        <h2>5. Children</h2>
+        <p>The app is not intended for children under 13. We do not knowingly collect information about children.</p>
+      </section>
+
+      <section id="en-changes">
+        <h2>6. Changes</h2>
+        <p>We may update this policy from time to time. Updates will be indicated by the new effective date shown above.</p>
+      </section>
+
+      <section id="en-contacts" class="card">
+        <h2>7. Contacts</h2>
+        <p>If you have questions about privacy or your rights, contact: <a href="mailto:strikevld@mail.ru">strikevld@mail.ru</a>.</p>
+      </section>
+
+      <footer>© 2025 Иванов Владислав Игоревич. All rights reserved.</footer>
+    </section>
+
+    <!-- RUSSIAN -->
+    <section id="lang-ru" data-lang="ru" lang="ru">
+      <header>
+        <h1>Политика конфиденциальности</h1>
+        <p class="meta"><strong>Приложение:</strong> Street Gate<br>
+        <strong>Разработчик:</strong> Иванов Владислав Игоревич<br>
+        <strong>Контактный e-mail:</strong> <a href="mailto:strikevld@mail.ru">strikevld@mail.ru</a><br>
+        <strong>Дата вступления в силу:</strong> 28 сентября 2025 г.</p>
+      </header>
+
+      <nav class="local" aria-label="Содержание">
+        <a href="#ru-general">Общее</a>
+        <a href="#ru-data">Сбор и использование данных</a>
+        <a href="#ru-permissions">Разрешения устройства</a>
+        <a href="#ru-storage">Хранение и безопасность</a>
+        <a href="#ru-children">Дети</a>
+        <a href="#ru-changes">Изменения</a>
+        <a href="#ru-contacts">Контакты</a>
+      </nav>
+
+      <section id="ru-general">
+        <h2>1. Общее</h2>
+        <p>Приложение «Street Gate» работает полностью офлайн, <strong>не имеет доступа в Интернет</strong> и <strong>не собирает, не хранит и не передаёт</strong> персональные данные.</p>
+        <p>Приложение предназначено для работы с <strong>контроллером на базе ESP32</strong>. Ссылка на прошивку (скетч) контроллера предоставляется прямо в приложении. При переходе по ссылке она открывается в вашем браузере; мы не управляем этим сайтом и не собираем на нём никаких данных.</p>
+        <p>Интерфейс доступен на <strong>английском</strong>, <strong>русском</strong> и <strong>турецком</strong> языках.</p>
+      </section>
+
+      <section id="ru-data">
+        <h2>2. Сбор и использование данных</h2>
+        <ul>
+          <li>Мы <strong>не собираем</strong> персональные данные (ФИО, e‑mail, телефоны, идентификаторы и т. п.).</li>
+          <li>Мы <strong>не используем</strong> аналитику, трекинг, рекламные идентификаторы, куки и сторонние краш‑репорты.</li>
+          <li>Мы <strong>не передаём</strong> данные третьим лицам и не выполняем профилирование или таргетированную рекламу.</li>
+        </ul>
+      </section>
+
+      <section id="ru-permissions">
+        <h2>3. Разрешения устройства</h2>
+        <p>Приложение запрашивает только те разрешения, которые необходимы для офлайн‑работы:</p>
+        <ul>
+          <li><strong>Bluetooth / Nearby devices</strong> (Android 12+): для подключения к близлежащим устройствам (ESP32‑контроллер).</li>
+          <li><strong>Location</strong> (на некоторых версиях Android): может требоваться системой для обнаружения Bluetooth‑устройств. Приложение <strong>не собирает, не сохраняет и не передаёт</strong> данные о вашей геолокации.</li>
+        </ul>
+        <p>Все разрешения используются <strong>локально</strong>, а любые данные, возникающие при работе, <strong>не покидают ваше устройство</strong>.</p>
+      </section>
+
+      <section id="ru-storage">
+        <h2>4. Хранение и безопасность</h2>
+        <p>Мы не используем удалённые серверы и не выполняем удалённое хранение. Настройки приложения (если имеются) сохраняются только локально на вашем устройстве и удаляются при удалении приложения.</p>
+      </section>
+
+      <section id="ru-children">
+        <h2>5. Дети</h2>
+        <p>Приложение не предназначено для детей младше 13 лет. Мы не собираем сведения о детях.</p>
+      </section>
+
+      <section id="ru-changes">
+        <h2>6. Изменения</h2>
+        <p>Мы можем периодически обновлять настоящую политику. Обновления отражаются изменением даты вступления в силу, указанной выше.</p>
+      </section>
+
+      <section id="ru-contacts" class="card">
+        <h2>7. Контакты</h2>
+        <p>По вопросам конфиденциальности свяжитесь с нами: <a href="mailto:strikevld@mail.ru">strikevld@mail.ru</a>.</p>
+      </section>
+
+      <footer>© 2025 Иванов Владислав Игоревич. Все права защищены.</footer>
+    </section>
+
+    <!-- TURKISH -->
+    <section id="lang-tr" data-lang="tr" lang="tr">
+      <header>
+        <h1>Gizlilik Politikası</h1>
+        <p class="meta"><strong>Uygulama:</strong> Street Gate<br>
+        <strong>Geliştirici:</strong> Иванов Владислав Игоревич<br>
+        <strong>İletişim e‑posta:</strong> <a href="mailto:strikevld@mail.ru">strikevld@mail.ru</a><br>
+        <strong>Yürürlük tarihi:</strong> 28 Eylül 2025</p>
+      </header>
+
+      <nav class="local" aria-label="İçindekiler">
+        <a href="#tr-general">Genel</a>
+        <a href="#tr-data">Veri Toplama ve Kullanım</a>
+        <a href="#tr-permissions">Cihaz İzinleri</a>
+        <a href="#tr-storage">Saklama ve Güvenlik</a>
+        <a href="#tr-children">Çocuklar</a>
+        <a href="#tr-changes">Değişiklikler</a>
+        <a href="#tr-contacts">İletişim</a>
+      </nav>
+
+      <section id="tr-general">
+        <h2>1. Genel</h2>
+        <p>“Street Gate” uygulaması tamamen çevrimdışı çalışır, <strong>İnternet erişimi yoktur</strong> ve <strong>hiçbir kişisel veriyi toplamaz, saklamaz veya paylaşmaz</strong>.</p>
+        <p>Uygulama, <strong>ESP32 tabanlı bir kontrolör</strong> ile çalışmak üzere tasarlanmıştır. Kontrolörün ürün yazılımı (sketch) bağlantısı doğrudan uygulama içinde sağlanır. Bu bağlantıyı açtığınızda, cihazınızın web tarayıcısı kullanılır; ilgili web sitesi üzerinde herhangi bir kontrolümüz veya veri toplama faaliyetimiz yoktur.</p>
+        <p>Uygulama arayüzü <strong>İngilizce</strong>, <strong>Rusça</strong> ve <strong>Türkçe</strong> olarak sunulur.</p>
+      </section>
+
+      <section id="tr-data">
+        <h2>2. Veri Toplama ve Kullanım</h2>
+        <ul>
+          <li><strong>Hiçbir kişisel veri</strong> (isim, e‑posta, telefon numarası, tanımlayıcı vb.) toplamayız.</li>
+          <li>Analitik, takip, reklam kimlikleri, çerezler veya üçüncü taraf çökme raporlaması <strong>kullanmayız</strong>.</li>
+          <li>Verileri üçüncü taraflarla <strong>paylaşmayız</strong>; profil oluşturma veya hedefli reklam yapmayız.</li>
+        </ul>
+      </section>
+
+      <section id="tr-permissions">
+        <h2>3. Cihaz İzinleri</h2>
+        <p>Uygulama, yalnızca çevrimdışı işlevsellik için gerekli izinleri ister:</p>
+        <ul>
+          <li><strong>Bluetooth / Yakındaki cihazlar</strong> (Android 12+): yakındaki cihazlara (ESP32 kontrolör) bağlanmak için.</li>
+          <li><strong>Konum</strong> (bazı Android sürümlerinde): Bluetooth cihazlarını keşfetmek için sistem tarafından gerekebilir. Uygulama <strong>konum verilerinizi toplamaz, saklamaz veya iletmez</strong>.</li>
+        </ul>
+        <p>Tüm izinler <strong>yerel</strong> olarak kullanılır ve çalışma sırasında oluşabilecek veriler <strong>cihazınızı terk etmez</strong>.</p>
+      </section>
+
+      <section id="tr-storage">
+        <h2>4. Saklama ve Güvenlik</h2>
+        <p>Sunucu işletmeyiz ve uzaktan depolama yapmayız. Uygulama ayarları (varsa) yalnızca cihazınızda yerel olarak saklanır ve uygulamayı kaldırdığınızda silinir.</p>
+      </section>
+
+      <section id="tr-children">
+        <h2>5. Çocuklar</h2>
+        <p>Uygulama 13 yaşın altındaki çocuklar için tasarlanmamıştır. Çocuklara ilişkin bilgi bilerek toplanmaz.</p>
+      </section>
+
+      <section id="tr-changes">
+        <h2>6. Değişiklikler</h2>
+        <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncellemeler, yukarıda belirtilen yürürlük tarihinin değişmesiyle belirtilecektir.</p>
+      </section>
+
+      <section id="tr-contacts" class="card">
+        <h2>7. İletişim</h2>
+        <p>Gizlilikle ilgili sorularınız veya haklarınız için şu adresten bize ulaşın: <a href="mailto:strikevld@mail.ru">strikevld@mail.ru</a>.</p>
+      </section>
+
+      <footer>© 2025 Иванов Владислав Игоревич. Tüm hakları saklıdır.</footer>
+    </section>
+
+    <footer style="margin-top:24px;color:var(--muted)">
+      <p class="notice">Note / Примечание / Not: Bu sayfa çevrimdışıdır ve hiçbir kullanıcı verisi toplamaz. — This page is offline and collects no user data.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const sections = {
+        en: document.getElementById('lang-en'),
+        ru: document.getElementById('lang-ru'),
+        tr: document.getElementById('lang-tr')
+      };
+      const buttons = {
+        en: document.getElementById('btn-en'),
+        ru: document.getElementById('btn-ru'),
+        tr: document.getElementById('btn-tr')
+      };
+      const all = ['en','ru','tr'];
+
+      function activate(lang){
+        all.forEach(l => {
+          sections[l].classList.toggle('active', l===lang);
+          buttons[l].setAttribute('aria-pressed', l===lang ? 'true' : 'false');
+          buttons[l].setAttribute('aria-selected', l===lang ? 'true' : 'false');
+        });
+        try{ localStorage.setItem('sg_policy_lang', lang); }catch(e){}
+        if (location.hash !== '#'+lang) {
+          history.replaceState(null,'','#'+lang);
+        }
+      }
+
+      function detect(){
+        const hash = (location.hash || '').replace('#','').toLowerCase();
+        if (all.includes(hash)) return hash;
+        try{
+          const saved = localStorage.getItem('sg_policy_lang');
+          if (all.includes(saved)) return saved;
+        }catch(e){}
+        const nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        if (nav.startsWith('ru')) return 'ru';
+        if (nav.startsWith('tr')) return 'tr';
+        return 'en';
+      }
+
+      all.forEach(l => buttons[l].addEventListener('click', () => activate(l)));
+      activate(detect());
+    })();
+  </script>
+</body>
+</html>
